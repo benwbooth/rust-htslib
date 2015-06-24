@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Struct__IO_FILE` struct in crate `rust_htslib`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Struct__IO_FILE">
+
+    <title>rust_htslib::htslib::vcf::Struct__IO_FILE - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'><a href='../../index.html'>rust_htslib</a>::<wbr><a href='../index.html'>htslib</a>::<wbr><a href='index.html'>vcf</a></p><script>window.sidebarCurrent = {name: 'Struct__IO_FILE', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../../index.html'>rust_htslib</a>::<wbr><a href='../index.html'>htslib</a>::<wbr><a href='index.html'>vcf</a>::<wbr><a class='struct' href=''>Struct__IO_FILE</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-6345' class='srclink' href='../../../src/rust_htslib/htslib/vcf.rs.html#829-859' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct Struct__IO_FILE {
+    pub _flags: <a class='type' href='http://doc.rust-lang.org/nightly/libc/types/os/arch/c95/type.c_int.html' title='libc::types::os::arch::c95::c_int'>c_int</a>,
+    pub _IO_read_ptr: <a href='http://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut <a class='type' href='http://doc.rust-lang.org/nightly/libc/types/os/arch/c95/type.c_char.html' title='libc::types::os::arch::c95::c_char'>c_char</a></a>,
+    pub _IO_read_end: <a href='http://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut <a class='type' href='http://doc.rust-lang.org/nightly/libc/types/os/arch/c95/type.c_char.html' title='libc::types::os::arch::c95::c_char'>c_char</a></a>,
+    pub _IO_read_base: <a href='http://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut <a class='type' href='http://doc.rust-lang.org/nightly/libc/types/os/arch/c95/type.c_char.html' title='libc::types::os::arch::c95::c_char'>c_char</a></a>,
+    pub _IO_write_base: <a href='http://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut <a class='type' href='http://doc.rust-lang.org/nightly/libc/types/os/arch/c95/type.c_char.html' title='libc::types::os::arch::c95::c_char'>c_char</a></a>,
+    pub _IO_write_ptr: <a href='http://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut <a class='type' href='http://doc.rust-lang.org/nightly/libc/types/os/arch/c95/type.c_char.html' title='libc::types::os::arch::c95::c_char'>c_char</a></a>,
+    pub _IO_write_end: <a href='http://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut <a class='type' href='http://doc.rust-lang.org/nightly/libc/types/os/arch/c95/type.c_char.html' title='libc::types::os::arch::c95::c_char'>c_char</a></a>,
+    pub _IO_buf_base: <a href='http://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut <a class='type' href='http://doc.rust-lang.org/nightly/libc/types/os/arch/c95/type.c_char.html' title='libc::types::os::arch::c95::c_char'>c_char</a></a>,
+    pub _IO_buf_end: <a href='http://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut <a class='type' href='http://doc.rust-lang.org/nightly/libc/types/os/arch/c95/type.c_char.html' title='libc::types::os::arch::c95::c_char'>c_char</a></a>,
+    pub _IO_save_base: <a href='http://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut <a class='type' href='http://doc.rust-lang.org/nightly/libc/types/os/arch/c95/type.c_char.html' title='libc::types::os::arch::c95::c_char'>c_char</a></a>,
+    pub _IO_backup_base: <a href='http://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut <a class='type' href='http://doc.rust-lang.org/nightly/libc/types/os/arch/c95/type.c_char.html' title='libc::types::os::arch::c95::c_char'>c_char</a></a>,
+    pub _IO_save_end: <a href='http://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut <a class='type' href='http://doc.rust-lang.org/nightly/libc/types/os/arch/c95/type.c_char.html' title='libc::types::os::arch::c95::c_char'>c_char</a></a>,
+    pub _markers: <a href='http://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut <a class='struct' href='../../../rust_htslib/htslib/vcf/struct.Struct__IO_marker.html' title='rust_htslib::htslib::vcf::Struct__IO_marker'>Struct__IO_marker</a></a>,
+    pub _chain: <a href='http://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut <a class='struct' href='../../../rust_htslib/htslib/vcf/struct.Struct__IO_FILE.html' title='rust_htslib::htslib::vcf::Struct__IO_FILE'>Struct__IO_FILE</a></a>,
+    pub _fileno: <a class='type' href='http://doc.rust-lang.org/nightly/libc/types/os/arch/c95/type.c_int.html' title='libc::types::os::arch::c95::c_int'>c_int</a>,
+    pub _flags2: <a class='type' href='http://doc.rust-lang.org/nightly/libc/types/os/arch/c95/type.c_int.html' title='libc::types::os::arch::c95::c_int'>c_int</a>,
+    pub _old_offset: <a class='type' href='../../../rust_htslib/htslib/vcf/type.__off_t.html' title='rust_htslib::htslib::vcf::__off_t'>__off_t</a>,
+    pub _cur_column: <a class='type' href='http://doc.rust-lang.org/nightly/libc/types/os/arch/c95/type.c_ushort.html' title='libc::types::os::arch::c95::c_ushort'>c_ushort</a>,
+    pub _vtable_offset: <a class='type' href='http://doc.rust-lang.org/nightly/libc/types/os/arch/c95/type.c_char.html' title='libc::types::os::arch::c95::c_char'>c_char</a>,
+    pub _shortbuf: <a href='http://doc.rust-lang.org/nightly/std/primitive.array.html'>[<a class='type' href='http://doc.rust-lang.org/nightly/libc/types/os/arch/c95/type.c_char.html' title='libc::types::os::arch::c95::c_char'>c_char</a>; 1usize]</a>,
+    pub _lock: <a href='http://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut <a class='type' href='../../../rust_htslib/htslib/vcf/type._IO_lock_t.html' title='rust_htslib::htslib::vcf::_IO_lock_t'>_IO_lock_t</a></a>,
+    pub _offset: <a class='type' href='../../../rust_htslib/htslib/vcf/type.__off64_t.html' title='rust_htslib::htslib::vcf::__off64_t'>__off64_t</a>,
+    pub __pad1: <a href='http://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut <a class='enum' href='http://doc.rust-lang.org/nightly/libc/types/common/c95/enum.c_void.html' title='libc::types::common::c95::c_void'>c_void</a></a>,
+    pub __pad2: <a href='http://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut <a class='enum' href='http://doc.rust-lang.org/nightly/libc/types/common/c95/enum.c_void.html' title='libc::types::common::c95::c_void'>c_void</a></a>,
+    pub __pad3: <a href='http://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut <a class='enum' href='http://doc.rust-lang.org/nightly/libc/types/common/c95/enum.c_void.html' title='libc::types::common::c95::c_void'>c_void</a></a>,
+    pub __pad4: <a href='http://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut <a class='enum' href='http://doc.rust-lang.org/nightly/libc/types/common/c95/enum.c_void.html' title='libc::types::common::c95::c_void'>c_void</a></a>,
+    pub __pad5: <a class='type' href='../../../rust_htslib/htslib/vcf/type.size_t.html' title='rust_htslib::htslib::vcf::size_t'>size_t</a>,
+    pub _mode: <a class='type' href='http://doc.rust-lang.org/nightly/libc/types/os/arch/c95/type.c_int.html' title='libc::types::os::arch::c95::c_int'>c_int</a>,
+    pub _unused2: <a href='http://doc.rust-lang.org/nightly/std/primitive.array.html'>[<a class='type' href='http://doc.rust-lang.org/nightly/libc/types/os/arch/c95/type.c_char.html' title='libc::types::os::arch::c95::c_char'>c_char</a>; 20usize]</a>,
+}</pre><h2 class='fields'>Fields</h2>
+<table><tr class='stab '>
+                                  <td id='structfield._flags'><code>_flags</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield._IO_read_ptr'><code>_IO_read_ptr</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield._IO_read_end'><code>_IO_read_end</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield._IO_read_base'><code>_IO_read_base</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield._IO_write_base'><code>_IO_write_base</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield._IO_write_ptr'><code>_IO_write_ptr</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield._IO_write_end'><code>_IO_write_end</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield._IO_buf_base'><code>_IO_buf_base</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield._IO_buf_end'><code>_IO_buf_end</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield._IO_save_base'><code>_IO_save_base</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield._IO_backup_base'><code>_IO_backup_base</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield._IO_save_end'><code>_IO_save_end</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield._markers'><code>_markers</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield._chain'><code>_chain</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield._fileno'><code>_fileno</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield._flags2'><code>_flags2</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield._old_offset'><code>_old_offset</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield._cur_column'><code>_cur_column</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield._vtable_offset'><code>_vtable_offset</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield._shortbuf'><code>_shortbuf</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield._lock'><code>_lock</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield._offset'><code>_offset</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.__pad1'><code>__pad1</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.__pad2'><code>__pad2</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.__pad3'><code>__pad3</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.__pad4'><code>__pad4</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.__pad5'><code>__pad5</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield._mode'><code>_mode</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield._unused2'><code>_unused2</code></td><td></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../../../rust_htslib/htslib/vcf/struct.Struct__IO_FILE.html' title='rust_htslib::htslib::vcf::Struct__IO_FILE'>Struct__IO_FILE</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../../../rust_htslib/htslib/vcf/struct.Struct__IO_FILE.html' title='rust_htslib::htslib::vcf::Struct__IO_FILE'>Struct__IO_FILE</a></code></h4>
+</div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../../../rust_htslib/htslib/vcf/struct.Struct__IO_FILE.html' title='rust_htslib::htslib::vcf::Struct__IO_FILE'>Struct__IO_FILE</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../../../rust_htslib/htslib/vcf/struct.Struct__IO_FILE.html' title='rust_htslib::htslib::vcf::Struct__IO_FILE'>Struct__IO_FILE</a></code></h4>
+<h4 id='method.clone_from' class='method'><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/marker/trait.Copy.html' title='core::marker::Copy'>Copy</a> for <a class='struct' href='../../../rust_htslib/htslib/vcf/struct.Struct__IO_FILE.html' title='rust_htslib::htslib::vcf::Struct__IO_FILE'>Struct__IO_FILE</a></code></h3><div class='impl-items'></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+            <p>
+                Search functions by type signature (e.g.
+                <code>vec -> usize</code>)
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../../../";
+        window.currentCrate = "rust_htslib";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../../jquery.js"></script>
+    <script src="../../../main.js"></script>
+    
+    <script async src="../../../search-index.js"></script>
+</body>
+</html>
